@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .parent {
+      display: grid;
+      /* 第一栏auto，第二栏占据剩下的宽度 */
+      /* 250px repeat(12, 1fr)  表示第一栏250px宽，然后12栏平分树剩下的空间*/
+      grid-template-columns: auto 1fr;
+      grid-gap: 20px;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div class="parent" style="background-color: lightblue">
+    <div class="left" style="background-color: lightcoral">
+      <p>left</p>
+    </div>
+    <div class="right" style="background-color: lightseagreen">
+      <p>right</p>
+      <p>right</p>
+    </div>
+  </div>
+</body>
+
+</html>
